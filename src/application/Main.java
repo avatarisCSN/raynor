@@ -161,7 +161,7 @@ public class Main extends Application {
 		        	}
 		        	
 		        	 String g =process.findWinner(mass);
-		        	 if (g=="winner X" || g=="winner O" )
+		        	 if (g=="winner  X" || g=="winner O" )
 		        	 {
 		        		 System.out.println(g);
 		        		 Label secondLabel = new Label(g);
@@ -246,6 +246,7 @@ public class Main extends Application {
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			primaryStage.setScene(scene);
 			primaryStage.show();
+			primaryStage.setTitle("hello");
 		} catch(Exception e) {
 			e.printStackTrace();
 		}
